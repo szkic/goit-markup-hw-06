@@ -18,6 +18,8 @@
   --modalBackground: rgba(0, 0, 0, 0.2);
   --modalButton: rgba(0, 0, 0, 0.1);
   --footerEmailBorder: rgba(255, 255, 255, 0.3);
+  --formBorder: rgba(33, 33, 33, 0.2);
+  --shadowButton: rgba(0, 0, 0, 0.15);
 }
 
 body {
@@ -151,19 +153,7 @@ p {
 }
 
 .title-button {
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--white);
-  background-color: var(--blue-text);
-  border-style: none;
-
-  /* hw-03 */
   padding: 10px 41px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .title-button:hover {
@@ -668,14 +658,7 @@ p {
 }
 
 .footer-email-btn {
-  font-weight: 700;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
   padding: 10px 28px 10px 42px;
-  border: none;
-  background-color: var(--blue-text);
-  color: var(--white);
-  border-radius: 4px;
 }
 
 .footer-email-btn svg {
@@ -688,4 +671,81 @@ p {
 .footer-email:hover {
   outline: none;
   border-color: #2196f3;
+}
+
+/* MODAL BOX FORM */
+
+.modal-title {
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+  padding-top: 40px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  position: relative; /* do skasowania? */
+}
+
+.form {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-text {
+  resize: none;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  padding: 12px 16px;
+}
+
+.form-text::placeholder {
+  font-size: 12px;
+}
+
+.label-style {
+  font-size: 14px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--light-grey);
+  padding-bottom: 4px;
+}
+
+.form-style {
+  width: 448px;
+  margin-bottom: 10px;
+  border: 1px solid var(--formBorder);
+  border-radius: 4px;
+}
+
+.form-input {
+  padding: 10px 10px 10px 42px;
+}
+
+.form-icon-container {
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 12px;
+  top: 11px;
+}
+
+.form-button {
+  margin: 30px auto 0 auto;
+  padding: 10px 76px;
+}
+.blue-btn {
+  font-weight: 700;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  border: none;
+  background-color: var(--blue-text);
+  color: var(--white);
+  box-shadow: 0px 4px 4px var(--shadowButton);
+  border-radius: 4px;
 }
