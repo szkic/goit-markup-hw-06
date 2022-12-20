@@ -469,15 +469,19 @@
               placeholder="Wprowadź tekst"
               class="form-style form-text"
             ></textarea>
-            <label for="consent" class="form"></label>
-            <input
-              type="checkbox"
-              name="consent"
-              id="consent"
-              value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
-            />
-            Oświadczam iż akceptuję Regulamin i Politykę Prywatności.
-
+            <div class="consent-container">
+              <label for="consent" class="form"></label>
+              <input
+                type="checkbox"
+                name="consent"
+                id="consent"
+                value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
+                class="hidden checkbox"
+              />
+              <span class="consent-text"
+                >Oświadczam iż akceptuję <a href="#" class="consent-text-link">Regulamin<a > i <a href="#" class="consent-text-link">Politykę Prywatności.<a ></span
+              >
+            </div>
             <button type="submit" class="form form-button blue-btn">Wyślij</button>
           </form>
         </div>
