@@ -20,6 +20,7 @@
   --footerEmailBorder: rgba(255, 255, 255, 0.3);
   --formBorder: rgba(33, 33, 33, 0.2);
   --shadowButton: rgba(0, 0, 0, 0.15);
+  --greyOpacity: rgba(117, 117, 117, 0.5);
 }
 
 body {
@@ -547,7 +548,7 @@ p {
 
 .portfolio-description-text {
   position: absolute;
-  padding: 49px 45px 50px 24px;
+  padding: 49px 46px 50px 25px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -557,7 +558,7 @@ p {
 }
 
 .portfolio-item:hover .portfolio-description-text {
-  transform: translateY(-100%);
+  transform: translateY(-102%);
 }
 
 .img-box {
@@ -704,10 +705,11 @@ p {
 
 .form-text::placeholder {
   font-size: 12px;
+  color: var(--greyOpacity);
 }
 
 .label-style {
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--light-grey);
@@ -719,6 +721,11 @@ p {
   margin-bottom: 10px;
   border: 1px solid var(--formBorder);
   border-radius: 4px;
+}
+
+.form-style:focus {
+  outline: none;
+  border-color: var(--blue-text);
 }
 
 .form-input {
@@ -733,6 +740,10 @@ p {
   position: absolute;
   left: 12px;
   top: 11px;
+}
+
+.form-icon-container:focus-within {
+  fill: #2196f3;
 }
 
 .form-button {
