@@ -439,7 +439,7 @@
         <button class="modal-button" data-modal-close></button>
         <h4 class="modal-title">Zostaw swoje dane w formularzu poniżej</h4>
         <div class="form-container">
-          <form class="signup-form">
+          <form name="signup-form">
             <label for="form-name" class="form label-style">Imie</label>
             <div class="form-icon-container">
               <input type="text" name="form_name" id="form-name" class="form-style form-input" />
@@ -465,21 +465,22 @@
             <textarea
               name="form_comment"
               id="form-comment"
-              rows="6"
+              rows="5"
               placeholder="Wprowadź tekst"
               class="form-style form-text"
             ></textarea>
             <div class="consent-container">
-              <label for="consent" class="form"></label>
+              <label for="form_consent" class="form"></label>
               <input
                 type="checkbox"
-                name="consent"
-                id="consent"
+                name="form_consent"
+                id="form_consent"
                 value="Oświadczam iż akceptuję Regulamin i Politykę Prywatności."
                 class="hidden checkbox"
               />
               <span class="consent-text"
-                >Oświadczam iż akceptuję <a href="#" class="consent-text-link">Regulamin<a > i <a href="#" class="consent-text-link">Politykę Prywatności.<a ></span
+                >Oświadczam iż akceptuję <a href="#" class="consent-text-link">Regulamin</a> i
+                <a href="#" class="consent-text-link">Politykę Prywatności.</a></span
               >
             </div>
             <button type="submit" class="form form-button blue-btn">Wyślij</button>
